@@ -56,7 +56,8 @@ rm -f $RPM_BUILD_ROOT%{_libdir}/*.la
 %check
 make check
 
-%ldconfig_scriptlets
+%post -p /sbin/ldconfig
+%postun -p /sbin/ldconfig
 
 %files
 %doc AUTHORS Changes
