@@ -7,7 +7,7 @@
 Summary: An XML parser library
 Name: expat
 Version: %(echo %{unversion} | sed 's/_/./g')
-Release: %{?xsrel}%{?dist}
+Release: %{?xsrel}.0.gln.1%{?dist}
 Source0: expat-2.5.0.tar.gz
 URL: https://libexpat.github.io/
 License: MIT
